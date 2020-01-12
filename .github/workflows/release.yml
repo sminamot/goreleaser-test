@@ -3,7 +3,9 @@ name: goreleaser
 on:
   push:
     tags:
-      - v*
+      - 'v*'
+    branches-ignore:
+      - '**'
 
 jobs:
   goreleaser:
